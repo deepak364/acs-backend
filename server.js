@@ -8,6 +8,7 @@ const campaignRoutes = require('./src/routes/campaign.routes');
 const businessRoutes = require('./src/routes/business.routes');
 
 const app = express();
+app.set('trust proxy', 1);
 const PORT = process.env.PORT || 5000;
 
 
